@@ -20,9 +20,7 @@ const ImageContainer = ({ images, currentIndex }) => {
                 <img
                   src={image}
                   alt={`Image ${index}`}
-                  width={190}
-                  height={179}
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover w-[190px] h-[179px] rounded-md shadow-lg"
                 />
               </div>
             ))}
