@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import GalleryNavbar from "./GalleryNavbar";
-import ImageContainer from "./ImageContainer";
+import { Rectangle, Vector, Frame } from "./index";
 
 const Bottom = () => {
   const [images, setImages] = useState([
-    "/src/assets/Rectangle.png",
-    "/src/assets/Rectangle.png",
-    "/src/assets/Rectangle.png",
-    "/src/assets/Rectangle.png",
+    Rectangle,
+    Rectangle,
+    Rectangle,
+    Rectangle,
   ]);
 
   const addImages = (newImages) => {
@@ -21,12 +21,11 @@ const Bottom = () => {
     <>
       <div className="relative w-[720px] h-[320px] bg-[#363C43] shadow-xl drop-shadow-7xl  rounded-[8px]">
         <div className="absolute top-[20px] left-[12px] flex flex-col justify-between h-[160px]">
-          <img src="/src/assets/Vector.png" alt="vector" />
-          <img src="/src/assets/Frame.png" alt="boxes" />
+          <img src={Vector} alt="vector" />
+          <img src={Frame} alt="boxes" />
         </div>
 
         <GalleryNavbar onAddImage={addImages} images={images} />
-       
       </div>
     </>
   );

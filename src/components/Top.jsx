@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import RenderContent from "./RenderContent";
+import { Vector, Frame, topCRec } from "./index";
 
 const Top = () => {
   const [activeTab, setActiveTab] = useState("about");
@@ -9,11 +10,11 @@ const Top = () => {
     <>
       <div className="relative w-[720px] h-[320px] bg-[#363C43] shadow-xl drop-shadow-7xl rounded-[8px]">
         <div className="absolute top-[20px] left-[12px] flex flex-col justify-between h-[160px]">
-          <img src="/src/assets/Vector.png" alt="vector" />
-          <img src="/src/assets/Frame.png" alt="boxes" />
+          <img src={Vector} alt="vector" />
+          <img src={Frame} alt="boxes" />
         </div>
         <img
-          src="/src/assets/topCRec.png"
+          src={topCRec}
           alt="topRec"
           className="absolute right-1 top-1/3 bottom-1/2"
         />
