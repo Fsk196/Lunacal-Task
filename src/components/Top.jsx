@@ -20,8 +20,8 @@ const Top = () => {
         />
         <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
 
-        <div className="w-full h-fit flex justify-center items-center mt-5">
-          <div className="w-[630px] h-[200px] flex flex-col justify-center items-center gap-4">
+        <div className="w-full h-fit flex justify-center items-center mt-4">
+          <div className="w-[630px] h-[200px] flex flex-col justify-center items-start gap-4">
             <RenderContent activeTab={activeTab} />
           </div>
         </div>

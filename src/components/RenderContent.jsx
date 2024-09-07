@@ -6,8 +6,8 @@ const RenderContent = ({ activeTab }) => {
       return (
         <>
           <h2 className="text-xl text-[#969696] font-normal">
-            Hello! I’m <span className="font-bold">Faisal</span>, Recently completed my Master's in Computer
-            Science
+            Hello! I’m <span className="font-bold">Faisal</span>, Recently
+            completed my Master's in Computer Science
           </h2>
           <h2 className="text-xl text-[#969696]">
             I was born and raised in Mumbai INDIA, I play games in my free times
@@ -46,52 +46,32 @@ const RenderContent = ({ activeTab }) => {
     case "recommended":
       return (
         <>
-          <h2 className="text-xl text-[#969696] font-normal">
-            Based on your preferences, I recommend my projects that you must see{" "}
-            <span className="font-semibold">
-              Blog application(Currently working)
-            </span>
-            <li>
-              <a
-                href="https://youtubeclonebyfsk.netlify.app/"
-                className="underline font-medium"
-              >
+        <div></div>
+          <h2 className="text-xl text-[#969696] font-normal">I recommend my projects that you must see.
+            <li className="list-none">
+              <a href="https://youtubeclonebyfsk.netlify.app/" target="_blank">
                 Youtube CLone
               </a>
             </li>
-            <li>
-              <a
-                href="https://e2h.netlify.app/"
-                className="underline font-medium"
-              >
+            <li className="list-none">
+              <a href="https://e2h.netlify.app/" target="_blank">
                 Text-to-Text Translator
               </a>
             </li>
-            <li>
-              <a
-                href="https://vblogsfsk.netlify.app/"
-                className="underline font-medium"
-              >
+            <li className="list-none">
+              <a href="https://vblogsfsk.netlify.app/" target="_blank">
                 Blog
               </a>
             </li>
-            <li>
-              <a
-                href="https://nike-fsk.netlify.app/"
-                className="underline font-medium"
-              >
+            <li className="list-none">
+              <a href="https://nike-fsk.netlify.app/" target="_blank">
                 Nike
               </a>
             </li>
-            For more check my{" "}
-            <a
-              href="https://github.com/fsk196"
-              className="underline font-medium"
-            >
+            <a href="https://github.com/fsk196" target="_blank">
               Github
             </a>
           </h2>
-          {/* Add recommendations content here */}
         </>
       );
     default:
